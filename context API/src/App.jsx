@@ -1,8 +1,13 @@
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import UserContexProvider from "./context/UserContextProvider";
+
 function App() {
   return (
-    <>
-      <h1 className="bg-amber-400">project setup</h1>
-    </>
+    <UserContexProvider>
+      <Login />
+      <Profile />
+    </UserContexProvider>
   );
 }
 
