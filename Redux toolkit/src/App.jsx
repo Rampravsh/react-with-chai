@@ -1,7 +1,13 @@
+import AddTodo from "./components/AddTodo";
+import Todos from "./components/Todos";
+
 function App() {
   return (
     <>
-      <h1>project setup</h1>
+      <div className="flex flex-col items-center">
+        <AddTodo />
+        <Todos />
+      </div>
     </>
   );
 }
